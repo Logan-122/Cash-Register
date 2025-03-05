@@ -161,10 +161,10 @@ namespace Cash_Register
                 Thread.Sleep(1000);
                 recipetoutput.Text += $"\nChange                        {change.ToString("C")}";
                 Refresh();
-                Thread.Sleep(1000);
+                Thread.Sleep(1000); 
                 recipetoutput.Text += "\n\n----Have a Nice Day-----";
                 neworder.Enabled = true;
-
+            
             
             }
         
