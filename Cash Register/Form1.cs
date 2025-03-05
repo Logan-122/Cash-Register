@@ -97,7 +97,7 @@ namespace Cash_Register
 
             }
         }
-
+        
             private void button1_Click(object sender, EventArgs e)
             {
                 
@@ -115,13 +115,18 @@ namespace Cash_Register
                     double tax = taxrate * subtotal;
                     double total = subtotal + tax;
                     double change = tendered - total;
-            
 
-         
+            SoundPlayer player = new SoundPlayer(Properties.Resources.cash_register_print39);
+            
+            player.Play();
+
+
+
             Refresh();
             Thread.Sleep(1000);
             recipetoutput.Text = $"                    Burger Clan";
-                Refresh();
+               player.Play();
+            Refresh();
                 Thread.Sleep(1000);
                 recipetoutput.Text += "\n\nOrder Number 1533";
                 Refresh();
@@ -129,28 +134,32 @@ namespace Cash_Register
                 recipetoutput.Text += "\nMarch 3, 2025";
                 Refresh();
                 Thread.Sleep(1000);
-                recipetoutput.Text += $"\nBurgers--------x{numofburger}--@---{newburger}";
+                recipetoutput.Text += $"\nBurgers        x{numofburger}  @       {newburger}";
                 Refresh();
                 Thread.Sleep(1000);
-                recipetoutput.Text += $"\nFries------------x{numoffries}--@-----{newoffries}";
+                recipetoutput.Text += $"\nFries             x{numoffries}  @        {newoffries}";
+               
+            Refresh();
+                Thread.Sleep(1000);
+            recipetoutput.Text += $"\nSalad            x{numofsalad}  @       {newsalad}";
+           player.Play();
+            Refresh();
+                Thread.Sleep(1000);
+                recipetoutput.Text += $"\n\nSubtotal                    {subtotal.ToString("C")}";
+                player.Play();
+            Refresh();
+                Thread.Sleep(1000);
+                recipetoutput.Text += $"\nTax                               {tax.ToString("C")}";
+                
+            Refresh();
+                Thread.Sleep(1000);
+                recipetoutput.Text += $"\nTotal                          {total.ToString("C")}";
                 Refresh();
                 Thread.Sleep(1000);
-                recipetoutput.Text += $"\nSalad-----------x{numofsalad}--@-----{newsalad}";
+                recipetoutput.Text += $" \n\nTendered                   {tendered.ToString("C")}";
                 Refresh();
                 Thread.Sleep(1000);
-                recipetoutput.Text += $"\n\nSubtotal-----------------{subtotal.ToString("C")}";
-                Refresh();
-                Thread.Sleep(1000);
-                recipetoutput.Text += $"\nTax--------------------------{tax.ToString("C")}";
-                Refresh();
-                Thread.Sleep(1000);
-                recipetoutput.Text += $"\nTotal----------------------{total.ToString("C")}";
-                Refresh();
-                Thread.Sleep(1000);
-                recipetoutput.Text += $" \n\nTendered----------------{tendered.ToString("C")}";
-                Refresh();
-                Thread.Sleep(1000);
-                recipetoutput.Text += $"\nChange--------------------{change.ToString("C")}";
+                recipetoutput.Text += $"\nChange                        {change.ToString("C")}";
                 Refresh();
                 Thread.Sleep(1000);
                 recipetoutput.Text += "\n\n----Have a Nice Day-----";

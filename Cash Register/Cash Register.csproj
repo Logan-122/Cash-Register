@@ -83,5 +83,11 @@
   <ItemGroup>
     <None Include="Resources\064968_cash-register-print39n39rip-b1-89530.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash Register.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\064968_cash-register-print39n39rip-b1-89530.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

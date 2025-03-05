@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="_064968_cash_register_print39n39rip_b1_89530" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\064968_cash-register-print39n39rip-b1-89530.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cash_register_print39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\064968_cash-register-print39n39rip-b1-89530.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

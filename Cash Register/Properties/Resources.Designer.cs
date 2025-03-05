@@ -61,12 +61,11 @@ namespace Cash_Register.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static byte[] _064968_cash_register_print39n39rip_b1_89530 {
+        internal static System.IO.UnmanagedMemoryStream cash_register_print39 {
             get {
-                object obj = ResourceManager.GetObject("_064968_cash_register_print39n39rip_b1_89530", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetStream("cash_register_print39", resourceCulture);
             }
         }
     }

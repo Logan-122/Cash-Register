@@ -237,7 +237,7 @@
             this.changeoutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeoutput.Location = new System.Drawing.Point(190, 440);
             this.changeoutput.Name = "changeoutput";
-            this.changeoutput.Size = new System.Drawing.Size(76, 23);
+            this.changeoutput.Size = new System.Drawing.Size(92, 23);
             this.changeoutput.TabIndex = 19;
             this.changeoutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
